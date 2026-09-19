@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingSetMakerDef>
+    <defName>Reward_ArchotechTechprintCache</defName>
+    <root Class="ArchotechExpanded.ThingSetMaker_ArchotechCache" />
+  </ThingSetMakerDef>
+
+  <ThingSetMakerDef>
+    <defName>Reward_ArchotechTechprintCachePillars</defName>
+    <root Class="ArchotechExpanded.ThingSetMaker_ArchotechPillars" />
+  </ThingSetMakerDef>
+</Defs>

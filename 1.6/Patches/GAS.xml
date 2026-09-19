@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Megaspider"]/description</xpath>
+    <value>
+      <description>The megaspider is a genetically-engineered giant insectoid the size of a small bear. Designed for heavy work and combat, its thick chitinous armor makes it hard to kill, while its long ripper-blades make it deadly at close quarters. It is, however, quite slow in open terrain. They are also known as Giant alien spiders or G.A.S. for short.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Archospider"]/description</xpath>
+    <value>
+      <description>Perhaps your archotech spore hates arachnophobes. There are few other excuses for creating this monstrous life-form - a Giant Alien Spiders that are truly no joke, jaws capable of shearing plasteel, and a breeding rate that threatens to quickly overwhelm a planet's ecosystem. At least it is unfailingly loyal to its masters... so far.\n\nLike all archolife, its cells power themselves vanometrically and it absorbs atoms directly from the air, so it does not need to eat. Archolife can survive vacuum exposure, has no known maximum age, and regenerates scarred or missing body parts. It can even generate a shield in combat.</description>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechChargeRifle_Unique"]/comps</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>30</magazineSize>
+              <reloadTime>4</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>AimedShot</aiAimMode>
+              <aimedBurstShotCount>4</aimedBurstShotCount>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechChargeRifle_Unique"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_UnderBarrel" />
+            <li>
+              <compClass>CompEquippable</compClass>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechChargeSMG_Unique"]/comps</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>40</magazineSize>
+              <reloadTime>4</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>Snapshot</aiAimMode>
+              <aimedBurstShotCount>6</aimedBurstShotCount>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechChargeSMG_Unique"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_UnderBarrel" />
+            <li>
+              <compClass>CompEquippable</compClass>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechRevolver_Unique"]/comps</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>6</magazineSize>
+              <reloadTime>3</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>AimedShot</aiAimMode>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechRevolver_Unique"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_UnderBarrel" />
+            <li>
+              <compClass>CompEquippable</compClass>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechShotgun_Unique"]/comps</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>2</magazineSize>
+              <reloadTime>2.7</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>Snapshot</aiAimMode>
+              <aiUseBurstMode>True</aiUseBurstMode>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechShotgun_Unique"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_UnderBarrel" />
+            <li>
+              <compClass>CompEquippable</compClass>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechLMG_Unique"]/comps</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>100</magazineSize>
+              <reloadTime>6</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>SuppressFire</aiAimMode>
+              <aimedBurstShotCount>10</aimedBurstShotCount>
+              <noSingleShot>true</noSingleShot>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechLMG_Unique"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_UnderBarrel" />
+            <li>
+              <compClass>CompEquippable</compClass>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechSniperRifle_Unique"]/comps</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+              <magazineSize>4</magazineSize>
+              <reloadTime>4</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+              <aiAimMode>AimedShot</aiAimMode>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ArchotechSniperRifle_Unique"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+          <value>
+            <li Class="CombatExtended.CompProperties_UnderBarrel" />
+            <li>
+              <compClass>CompEquippable</compClass>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

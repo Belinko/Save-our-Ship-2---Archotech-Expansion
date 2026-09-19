@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef>
+    <defName>OrbitalTrader_Archotech</defName>
+    <label>Archotech merchant</label>
+    <commonality>0.5</commonality>
+    <orbital>true</orbital>
+    <faction>Faction_ArchotechMerchant</faction>
+    <stockGenerators>
+   
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Gun_ArchotechChargeRifle</li>
+          <li>Gun_ArchotechRevolver</li>
+          <li>Gun_ArchotechShotgun</li>
+          <li>Gun_ArchotechLMG</li>
+          <li>Gun_ArchotechSniperRifle</li>
+          <li>Gun_ArchotechGrenadeLauncher</li>
+          <li>ArchotechMonoSword</li>
+          <li>ArchotechZeusHammer</li>
+          <li>ArchotechPlasmaSword</li>
+        </thingDefs>
+        <countRange>1~1</countRange>
+        <price>Cheap</price>
+      </li>
+         
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Gun_ArchotechChargeRifle</li>
+          <li>Gun_ArchotechRevolver</li>
+          <li>Gun_ArchotechShotgun</li>
+          <li>Gun_ArchotechLMG</li>
+          <li>Gun_ArchotechSniperRifle</li>
+          <li>Gun_ArchotechGrenadeLauncher</li>
+          <li>ArchotechMonoSword</li>
+          <li>ArchotechZeusHammer</li>
+          <li>ArchotechPlasmaSword</li>
+        </thingDefs>
+        <countRange>1~1</countRange>
+        <price>Cheap</price>
+      </li>
+
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Gun_ArchotechChargeRifle</li>
+          <li>Gun_ArchotechRevolver</li>
+          <li>Gun_ArchotechShotgun</li>
+          <li>Gun_ArchotechLMG</li>
+          <li>Gun_ArchotechSniperRifle</li>
+          <li>Gun_ArchotechGrenadeLauncher</li>
+          <li>ArchotechMonoSword</li>
+          <li>ArchotechZeusHammer</li>
+          <li>ArchotechPlasmaSword</li>
+        </thingDefs>
+        <countRange>1~1</countRange>
+        <price>Cheap</price>
+      </li>
+
+      
+
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Techprint_ArchotechScanners</li>
+          <li>Techprint_ArchotechArmor</li>
+          <li>Techprint_ArchotechWeapons</li>
+          <li>Techprint_ArchoMissle</li>
+          <li>Techprint_ArchotechShields</li>
+          <li>Techprint_ArchotechHeatsink</li>
+          <li>Techprint_ArchotechEngine</li>
+          <li>Techprint_ArchotechReactor</li>
+          <li>Techprint_ArchotechPsychicWeapon</li>
+          <li>Techprint_ArchotechPsychicManipulation</li>
+          <li>Techprint_ArchotechBroadManipulation</li>
+          <li>Techprint_ArchotechMechaniteWeapon</li>
+          <li>Techprint_ArchotechBioMechanitesTwo</li>
+          <li>Techprint_ArchotechBioMechanites</li>
+          <li>Techprint_ArchotechMechanites</li>
+        </thingDefs>
+        <countRange>1~1</countRange> 
+        <price>Exorbitant</price>
+      </li>
+
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Techprint_ArchotechScanners</li>
+          <li>Techprint_ArchotechArmor</li>
+          <li>Techprint_ArchotechWeapons</li>
+          <li>Techprint_ArchoMissle</li>
+          <li>Techprint_ArchotechShields</li>
+          <li>Techprint_ArchotechHeatsink</li>
+          <li>Techprint_ArchotechEngine</li>
+          <li>Techprint_ArchotechReactor</li>
+          <li>Techprint_ArchotechPsychicWeapon</li>
+          <li>Techprint_ArchotechPsychicManipulation</li>
+          <li>Techprint_ArchotechBroadManipulation</li>
+          <li>Techprint_ArchotechMechaniteWeapon</li>
+          <li>Techprint_ArchotechBioMechanitesTwo</li>
+          <li>Techprint_ArchotechBioMechanites</li>
+          <li>Techprint_ArchotechMechanites</li>
+        </thingDefs>
+        <countRange>1~1</countRange> 
+        <price>Exorbitant</price>
+      </li>
+
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Techprint_ArchotechScanners</li>
+          <li>Techprint_ArchotechArmor</li>
+          <li>Techprint_ArchotechWeapons</li>
+          <li>Techprint_ArchoMissle</li>
+          <li>Techprint_ArchotechShields</li>
+          <li>Techprint_ArchotechHeatsink</li>
+          <li>Techprint_ArchotechEngine</li>
+          <li>Techprint_ArchotechReactor</li>
+          <li>Techprint_ArchotechPsychicWeapon</li>
+          <li>Techprint_ArchotechPsychicManipulation</li>
+          <li>Techprint_ArchotechBroadManipulation</li>
+          <li>Techprint_ArchotechMechaniteWeapon</li>
+          <li>Techprint_ArchotechBioMechanitesTwo</li>
+          <li>Techprint_ArchotechBioMechanites</li>
+          <li>Techprint_ArchotechMechanites</li>
+        </thingDefs>
+        <countRange>1~1</countRange> 
+        <price>Exorbitant</price>
+      </li>
+
+       <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Techprint_ArchotechScanners</li>
+          <li>Techprint_ArchotechArmor</li>
+          <li>Techprint_ArchotechWeapons</li>
+          <li>Techprint_ArchoMissle</li>
+          <li>Techprint_ArchotechShields</li>
+          <li>Techprint_ArchotechHeatsink</li>
+          <li>Techprint_ArchotechEngine</li>
+          <li>Techprint_ArchotechReactor</li>
+          <li>Techprint_ArchotechPsychicWeapon</li>
+          <li>Techprint_ArchotechPsychicManipulation</li>
+          <li>Techprint_ArchotechBroadManipulation</li>
+          <li>Techprint_ArchotechMechaniteWeapon</li>
+          <li>Techprint_ArchotechBioMechanitesTwo</li>
+          <li>Techprint_ArchotechBioMechanites</li>
+          <li>Techprint_ArchotechMechanites</li>
+        </thingDefs>
+        <countRange>1~1</countRange> 
+        <price>Exorbitant</price>
+      </li>
+
+       <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Techprint_ArchotechScanners</li>
+          <li>Techprint_ArchotechArmor</li>
+          <li>Techprint_ArchotechWeapons</li>
+          <li>Techprint_ArchoMissle</li>
+          <li>Techprint_ArchotechShields</li>
+          <li>Techprint_ArchotechHeatsink</li>
+          <li>Techprint_ArchotechEngine</li>
+          <li>Techprint_ArchotechReactor</li>
+          <li>Techprint_ArchotechPsychicWeapon</li>
+          <li>Techprint_ArchotechPsychicManipulation</li>
+          <li>Techprint_ArchotechBroadManipulation</li>
+          <li>Techprint_ArchotechMechaniteWeapon</li>
+          <li>Techprint_ArchotechBioMechanitesTwo</li>
+          <li>Techprint_ArchotechBioMechanites</li>
+          <li>Techprint_ArchotechMechanites</li>
+        </thingDefs>
+        <countRange>1~1</countRange> 
+        <price>Exorbitant</price>
+      </li>
+
+
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>ArchotechArmor</li>
+          <li>ArchotechHelmet</li>
+          <li>ArchotechGunlink</li>
+        </thingDefs>
+        <countRange>1~1</countRange>
+        <price>Cheap</price>
+      </li>
+
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>ArchotechArmor</li>
+          <li>ArchotechHelmet</li>
+          <li>ArchotechGunlink</li>
+        </thingDefs>
+        <countRange>1~1</countRange>
+        <price>Cheap</price>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>30000~45000</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

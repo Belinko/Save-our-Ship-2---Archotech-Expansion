@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseShipTurretBuilding" Name="AechoShipTurretBuildingHeavyGun" Abstract="True">
+		<size>(4,4)</size>
+		<altitudeLayer>Gas</altitudeLayer>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	
+    <!-- Laser -->
+	<DesignatorDropdownGroupDef>
+		<defName>ArchotechShip_Heavy_Guns</defName>
+	</DesignatorDropdownGroupDef>
+	<ThingDef ParentName="AechoShipTurretBuildingHeavyGun">
+		<defName>ArchotechShipHeavyGunLaser</defName>
+		<label>Archotech ship gun: laser</label>
+		<designatorDropdown>ArchotechShip_Heavy_Guns</designatorDropdown>
+		<description>"A powerful weapon of destruction predating any modern laser, which does massive amounts of damage.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchoHeavyGun_Laser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,7)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>5500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<RangedWeapon_DamageMultiplier>0.40</RangedWeapon_DamageMultiplier>
+		</statBases>
+		<costList>
+			<Steel>1400</Steel>
+			<Plasteel>250</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<ArchotechExoticParticles>5</ArchotechExoticParticles>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<hermetic>true</hermetic>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipHeat">
+				<compClass>SaveOurShip2.CompShipHeat</compClass>
+				<heatPerPulse>75</heatPerPulse>
+				<energyToFire>250</energyToFire>
+				<optRange>50</optRange>
+				<maxRange>100</maxRange>
+				<projectileSpeed>10</projectileSpeed>
+				<singleFireSound>ArchLaser</singleFireSound>
+				<threat>50</threat>
+				<laserColor>(19,252,3)</laserColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ArchotechShipHeavyGuns</li>
+		</researchPrerequisites>
+		<uiIconScale>0.65</uiIconScale>
+		<building>
+			<paintable>true</paintable>
+			<shipPart>true</shipPart>
+			<turretGunDef>ShipTurret_ArchoHeavyGunLaser</turretGunDef>
+			<turretBurstCooldownTime>20</turretBurstCooldownTime>
+		</building>
+		<size>(2,7)</size>
+	</ThingDef>
+	<ThingDef ParentName="BaseShipArtilleryWeapon">
+		<defName>ShipTurret_ArchoHeavyGunLaser</defName>
+		<label>Archotech heavy ship gun: laser</label>
+		<description>Heavy ship weaponry.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+		</graphicData>
+		<verbs>
+			<li>
+				<label>shoot</label>
+				<verbClass>SaveOurShip2.Verb_LaunchProjectileShip</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>1000</range>
+				<warmupTime>0</warmupTime>
+				<forcedMissRadius>1</forcedMissRadius>
+				<noiseRadius>2</noiseRadius>
+				<burstShotCount>35</burstShotCount>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_ArchoShipSpinalBeamLaserHeavyGun</defaultProjectile>
+				<spawnDef>Bullet_Fake_Laser</spawnDef>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_ArchoShipSpinalBeamLaserHeavyGun</defName>
+		<label>death ray</label>
+		<thingClass>SaveOurShip2.Projectile_ExplosiveShipLaser</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<explosionRadius>5</explosionRadius>
+			<damageDef>ArchoHeavyShipLaserTwo</damageDef>
+			<speed>400</speed>
+		</projectile>
+	</ThingDef>
+
+	<DamageDef Name="ArchoHeavyShipLaserTwo">
+		<defName>ArchoHeavyShipLaserTwo</defName>
+		<label>laser</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has been lasered to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<hediffSolid>Burn</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>65</minDamageToFragment>
+		<defaultDamage>80</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.40</defaultArmorPenetration>
+		<buildingDamageFactor>4</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>25</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastLaserSoS</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+    <!-- Plasma -->
+	<ThingDef ParentName="AechoShipTurretBuildingHeavyGun">
+		<defName>ArchotechShipHeavyGunPlasma</defName>
+		<label>Archotech heavy gun: plasma</label>
+		<designatorDropdown>ArchotechShip_Heavy_Guns</designatorDropdown>
+		<description>This peculiar weapon fires bolts of plasma that do have a big explosion radius.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchoHeavyGun_Plasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,7)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>5500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<RangedWeapon_DamageMultiplier>0.35</RangedWeapon_DamageMultiplier>
+		</statBases>
+		<costList>
+			<Steel>1400</Steel>
+			<Plasteel>250</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<ArchotechExoticParticles>5</ArchotechExoticParticles>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<hermetic>true</hermetic>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipHeat">
+				<compClass>SaveOurShip2.CompShipHeat</compClass>
+				<heatPerPulse>75</heatPerPulse>
+				<energyToFire>250</energyToFire>
+				<optRange>100</optRange>
+				<maxRange>150</maxRange>
+				<projectileSpeed>3</projectileSpeed>
+				<threat>50</threat>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ArchotechShipHeavyGuns</li>
+		</researchPrerequisites>
+		<uiIconScale>0.65</uiIconScale>
+		<building>
+			<paintable>true</paintable>
+			<shipPart>true</shipPart>
+			<turretGunDef>ArchoTurret_HeavyGunPlasma</turretGunDef>
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>15</turretBurstCooldownTime>
+		</building>
+		<size>(2,7)</size>
+	</ThingDef>	
+	<ThingDef ParentName="BaseShipArtilleryWeapon">
+		<defName>ArchoTurret_HeavyGunPlasma</defName>
+		<label>Archo ship gun: plasma</label>
+		<description>Heavy ship weaponry.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+		</graphicData>
+		<verbs>
+			<li>
+				<label>shoot</label>
+				<verbClass>SaveOurShip2.Verb_LaunchProjectileShip</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>1500</range>
+				<warmupTime>0</warmupTime>
+				<forcedMissRadius>1</forcedMissRadius>
+				<noiseRadius>2</noiseRadius>
+				<burstShotCount>8</burstShotCount>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>ArchoPlasma</soundCast>
+				<defaultProjectile>ArchoPlasmaHeavyShot</defaultProjectile>
+				<spawnDef>Bullet_Fake_Plasma_XL</spawnDef>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>ArchoPlasmaHeavyShot</defName>
+		<label>death ray</label>
+		<thingClass>SaveOurShip2.Projectile_ExplosiveShipPlasmaXL</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ArchoShipTurretPlasma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<projectile>
+			<explosionRadius>17</explosionRadius>
+			<damageDef>ArchoHeavyShipPlasmaLarge</damageDef>
+			<speed>150</speed>
+		</projectile>
+	</ThingDef>
+	<DamageDef Name="ShipPlasmaLarge">
+		<defName>ArchoHeavyShipPlasmaLarge</defName>
+		<label>plasma</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has been vaporized by plasma.</deathMessage>
+		<hediff>Burn</hediff>
+		<hediffSolid>Burn</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>80</minDamageToFragment>
+		<defaultDamage>200</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.30</defaultArmorPenetration>
+		<buildingDamageFactor>10</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>25</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastPlasma</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+    <!-- Railgun -->
+	<ThingDef ParentName="AechoShipTurretBuildingHeavyGun">
+		<defName>ArchotechHeavyGunKinetic</defName>
+		<label>Archotech heavy gun: railgun</label>
+		<designatorDropdown>ArchotechShip_Heavy_Guns</designatorDropdown>
+		<description>Looks like its a railgun, but its nothing like anything you have ever seen.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchoHeavyGun_Railgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,7)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>5500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<RangedWeapon_DamageMultiplier>0.45</RangedWeapon_DamageMultiplier>
+		</statBases>
+		<costList>
+			<Steel>1400</Steel>
+			<Plasteel>250</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<ArchotechExoticParticles>5</ArchotechExoticParticles>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<hermetic>true</hermetic>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipHeat">
+				<compClass>SaveOurShip2.CompShipHeat</compClass>
+				<heatPerPulse>75</heatPerPulse>
+				<energyToFire>250</energyToFire>
+				<optRange>150</optRange>
+				<maxRange>250</maxRange>
+				<projectileSpeed>4</projectileSpeed>
+				<threat>50</threat>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ArchotechShipHeavyGuns</li>
+		</researchPrerequisites>
+		<uiIconScale>0.65</uiIconScale>
+		<building>
+			<paintable>true</paintable>
+			<shipPart>true</shipPart>
+			<turretGunDef>ArchotechHeavyGunKineticGun</turretGunDef>
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>13</turretBurstCooldownTime>
+		</building>
+		<size>(2,7)</size>
+	</ThingDef>
+	<ThingDef ParentName="BaseShipArtilleryWeapon">
+		<defName>ArchotechHeavyGunKineticGun</defName>
+		<label>Archotech heavy ship gun: kinetic</label>
+		<description>Hi!</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+		</graphicData>
+		<verbs>
+			<li>
+				<label>shoot</label>
+				<verbClass>SaveOurShip2.Verb_LaunchProjectileShip</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>2500</range>
+				<warmupTime>0</warmupTime>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<noiseRadius>4</noiseRadius>
+				<burstShotCount>6</burstShotCount>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>ArchoRail</soundCast>
+				<defaultProjectile>Proj_ArchoShipTurretKinetic_HeavyGun</defaultProjectile>
+				<spawnDef>ArchoBullet_Fake_Kinetic</spawnDef>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_ArchoShipTurretKinetic_HeavyGun</defName>
+		<label>railgun slug</label>
+		<thingClass>SaveOurShip2.Projectile_ExplosiveShip</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ArchoShipRailgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<explosionRadius>6</explosionRadius>
+			<damageDef>ArchoBombKineticHEavyGun</damageDef>
+			<speed>300</speed>
+		</projectile>
+	</ThingDef>
+	<DamageDef Name="BombKineticLarge2">
+		<defName>ArchoBombKineticHEavyGun</defName>
+		<label>bomb</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>100</minDamageToFragment>
+		<defaultDamage>350</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.99</defaultArmorPenetration>
+		<buildingDamageFactor>6</buildingDamageFactor>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(0, 255, 21)</explosionColorCenter>
+		<explosionColorEdge>(59, 255, 59)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+
+
+
+
+
+
+
+	<!-- secretGun -->
+
+	<ThingDef ParentName="BaseShipTurretBuilding" Name="SecretGunParent" Abstract="True">
+		<size>(4,4)</size>
+		<altitudeLayer>Gas</altitudeLayer>
+		 <designationCategory />
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+	</ThingDef>
+	
+
+	<ThingDef ParentName="SecretGunParent">
+		<defName>SecretGun</defName>
+		<label>Merchant Gun</label>
+		<description>Er#87_*AT@_N!#_F0#!*: 50 65 77 20 50 65 77 20 50 65 77 20 53 53 53 53 53 74 72 61 6e 67 65 72 20 3a 29</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/SecretGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,7)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>5500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<RangedWeapon_DamageMultiplier>0.35</RangedWeapon_DamageMultiplier>
+		</statBases>
+		<costList>
+			<Steel>1400</Steel>
+			<Plasteel>250</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<ArchotechExoticParticles>5</ArchotechExoticParticles>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<hermetic>true</hermetic>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipHeat">
+				<compClass>SaveOurShip2.CompShipHeat</compClass>
+				<heatPerPulse>50</heatPerPulse>
+				<energyToFire>150</energyToFire>
+				<optRange>150</optRange>
+				<maxRange>250</maxRange>
+				<projectileSpeed>4</projectileSpeed>
+				<threat>9999</threat>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<uiIconScale>0.65</uiIconScale>
+		<building>
+			<paintable>true</paintable>
+			<shipPart>true</shipPart>
+			<turretGunDef>MerchantGunGun</turretGunDef>
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>13</turretBurstCooldownTime>
+		</building>
+		<size>(2,7)</size>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="BaseShipArtilleryWeapon">
+		<defName>MerchantGunGun</defName>
+		<label>Archotech heavy ship gun: kinetic</label>
+		<description>SSSS</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+		</graphicData>
+		<verbs>
+			<li>
+				<label>shoot</label>
+				<verbClass>SaveOurShip2.Verb_LaunchProjectileShip</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>2500</range>
+				<warmupTime>0</warmupTime>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<noiseRadius>4</noiseRadius>
+				<burstShotCount>20</burstShotCount>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>ArchoRail</soundCast>
+				<defaultProjectile>Proj_MerchantGun</defaultProjectile>
+				<spawnDef>MerchantFakeBullet</spawnDef>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>MerchantFakeBullet</defName>
+		<label>railgun slug</label>
+		<graphicData>
+			<texPath>Things/Projectile/SecretShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<thingClass>SaveOurShip2.Projectile_ShipFake</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<speed>300</speed>
+			<explosionRadius>0</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		</projectile>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<seeThroughFog>true</seeThroughFog>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_MerchantGun</defName>
+		<label>railgun slug</label>
+		<thingClass>SaveOurShip2.Projectile_ExplosiveShip</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/SecretShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<explosionRadius>10</explosionRadius>
+			<damageDef>MerchantGunDamage</damageDef>
+			<speed>300</speed>
+		</projectile>
+	</ThingDef>
+	<DamageDef Name="BombKineticLarge3">
+		<defName>MerchantGunDamage</defName>
+		<label>bomb</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>25</minDamageToFragment>
+		<defaultDamage>10000</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.99</defaultArmorPenetration>
+		<buildingDamageFactor>15</buildingDamageFactor>
+		<plantDamageFactor>8</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(221, 0, 255)</explosionColorCenter>
+		<explosionColorEdge>(241, 148, 255)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+</Defs>

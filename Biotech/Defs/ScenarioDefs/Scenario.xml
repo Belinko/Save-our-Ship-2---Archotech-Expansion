@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>ResearchExpedition</defName>
+    <label>Archotech Expansion scenario</label>
+    <description>Four survivors aboard a trashed starship. (Archotech Expansion scenario)</description>
+	<scenario>
+		<name>Research expedition</name>
+		<summary>Four survivors aboard a trashed starship.</summary>
+		<description>Long years you have been researching strange hardware and signals from deep space that it resonated with, after finally tracking its source, your organisation has sponsored a long expedition to that planet giving you a military vessel equipped with that hardware... Only 4 of you have woken up, finding out that all the research you had has been destroyed, JT drive components are burned down, and all the reactors are nothing but a bunch of scrap, running the ship on emergency power. Will you continue your mission, or abandon everything and start a completely new life?
+(Warning! This is an extreme scenario due to your ship having expensive weaponary, that cannot be used from the start, ship battles will be UNFAIR! You also start almost with no research and your ship will run out of power FAST!)</description>
+		<!-- <publishedFileId>3785157000</publishedFileId> -->
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerColony</factionDef>
+		</playerFaction>
+		<!-- <surfaceLayer>
+			<def>SurfaceLayerFixed</def>
+			<layer>Surface</layer>
+			<settingsDef>Surface</settingsDef>
+			<hide>True</hide>
+			<tag>Surface</tag>
+			<connections>
+				<li>
+					<tag>Orbit</tag>
+					<zoomMode>ZoomOut</zoomMode>
+				</li>
+			</connections>
+		</surfaceLayer> -->
+		<parts>
+			<!-- <li Class="ScenPart_PlanetLayer">
+				<def>PlanetLayer</def>
+				<layer>Orbit</layer>
+				<settingsDef>Orbit</settingsDef>
+				<hide>True</hide>
+				<tag>Orbit</tag>
+				<connections>
+					<li>
+						<tag>Surface</tag>
+						<zoomMode>ZoomIn</zoomMode>
+					</li>
+				</connections>
+			</li> -->
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnChoiceCount>8</pawnChoiceCount>
+				<pawnCount>4</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+				<visible>false</visible>
+			</li>
+			<li Class="SaveOurShip2.ScenPart_StartInSpace">
+				<def>StartInSpace</def>
+				<spaceShipDef>ContactLightStarting</spaceShipDef>
+				<startType>Ship</startType>
+				<visible>true</visible>
+			</li>
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>1</chance>
+				<context>PlayerStarter</context>
+				<hideOffMap>True</hideOffMap>
+				<hediff>CryptosleepSickness</hediff>
+				<severityRange>1~1</severityRange>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>800</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>50</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Electricity</project>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>Four of you awake in your cryptosleep, JT drive is dead, ship computer is gone, and the whole thing runs on emergency power, with no idea what happened to your expedition, you start making your first survival plans.</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+  </ScenarioDef>
+</Defs>

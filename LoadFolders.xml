@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="CETeam.CombatExtended">CE</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">Odyssey</li>
+		<li IfModActive="VanillaExpanded.VTEXE.SOS2">VanillaTextures</li>
+		<li IfModActive="Mlie.VanillaTexturesExpandedSaveOurShip2">VanillaTextures</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">Biotech</li>
+	</v1.6>
+</loadFolders>

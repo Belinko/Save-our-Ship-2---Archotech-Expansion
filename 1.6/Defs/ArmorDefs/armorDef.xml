@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<ThingDef name="ArchotechArmor" ParentName="ArmorMachineableBase">
+    <defName>ArchotechArmor</defName>
+    <label>Archotech armor</label>
+    <description>An armor designed by archotech, it weighs quote few yet gives the best defence you could even imagine, it boosts psychic sensitivity, gives the user an invisible barrier that protects the from vacuum heat and cold, and is almost impossible to even scratch.</description>
+    
+    <graphicData>
+        <texPath>Things/Pawn/Armor/ArchoArmor</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>1.0</drawSize>
+    </graphicData>
+    
+    <statBases>
+        <MaxHitPoints>10000000</MaxHitPoints>          
+        <ArmorRating_Sharp>2</ArmorRating_Sharp> 
+        <ArmorRating_Blunt>1.95</ArmorRating_Blunt>
+        <ArmorRating_Heat>1.50</ArmorRating_Heat>
+        <Insulation_Cold>100</Insulation_Cold>
+        <Insulation_Heat>100</Insulation_Heat>
+        <EquipDelay>3.5</EquipDelay> 
+        <SellPriceFactor>0.35</SellPriceFactor>              
+        <Mass>2</Mass>                           
+        <Flammability>0</Flammability>     
+        <MarketValue>15000</MarketValue>
+    </statBases>
+    
+    <equippedStatOffsets>
+        <MoveSpeed>0.10</MoveSpeed>                 
+        <WorkSpeedGlobal>0.5</WorkSpeedGlobal>     
+        <PsychicSensitivity>0.25</PsychicSensitivity>
+        <ToxicResistance>1</ToxicResistance>
+        <PsychicEntropyMax>15</PsychicEntropyMax>
+        <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+        <DecompressionResistance>1</DecompressionResistance>
+        <HypoxiaResistance>1</HypoxiaResistance>
+        <VacuumSpeedMultiplier>4</VacuumSpeedMultiplier>
+    </equippedStatOffsets>    
+    <costList>
+        <Plasteel>1000</Plasteel>
+        <Gold>50</Gold>
+        <Uranium>500</Uranium>
+        <ComponentSpacer>15</ComponentSpacer>
+        <ArchotechExoticParticles>10</ArchotechExoticParticles>
+    </costList>
+    
+    <thingCategories>
+        <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <tradeTags>
+        <li>HiTechArmor</li>
+        <li>Armor</li>
+    </tradeTags>
+    
+    <techLevel>Archotech</techLevel>
+    
+    <apparel>
+        <bodyPartGroups>
+            <li>Torso</li>
+            <li>Legs</li>
+            <li>Arms</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Things/Pawn/Armor/ArchoArmor</wornGraphicPath>
+        <layers>
+            <li>Middle</li>      
+            <li>Shell</li>       
+        </layers>
+        <tags>
+            <li>Archotech</li>
+        </tags>
+        
+    </apparel>
+    
+    <recipeMaker>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <researchPrerequisite>ArchotechArmor</researchPrerequisite>
+        <skillRequirements>
+		  <Crafting>14</Crafting>
+		</skillRequirements>
+        <workAmount>30000</workAmount>  
+    </recipeMaker>
+</ThingDef>
+
+<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>ArchotechHelmet</defName>
+		<label>Archotech Helmet</label>
+		<description>A helmet designed by archotech, it weighs quote few yet gives the best defence you could even imagine, it has combat ai analisator that gives useful data and boosts accuracy, it also creates an invisible barrier that protects the user from vacuum heat and cold, and if paired with armor it allows to survive an absolutely extreme temperatures and places. Also it is almost impossible to even scratch.</description>
+		<techLevel>Ultra</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>ArchotechArmor</researchPrerequisite>
+			<displayPriority>470</displayPriority>
+            <workAmount>25000</workAmount>  
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Armor/ArchoHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>10000000</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.1</Flammability>
+			<ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.85</ArmorRating_Blunt>
+			<ArmorRating_Heat>1</ArmorRating_Heat>
+			<Insulation_Cold>100</Insulation_Cold>
+			<Insulation_Heat>100</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			<SellPriceFactor>0.35</SellPriceFactor>
+		</statBases>
+		<equippedStatOffsets>
+            <MeleeHitChance>0.25</MeleeHitChance>
+            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+            <PsychicSensitivity>0.25</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<HypoxiaResistance>1</HypoxiaResistance>
+			<DecompressionResistance>1</DecompressionResistance>
+            <PsychicEntropyMax>10</PsychicEntropyMax>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			 <Plasteel>500</Plasteel>
+             <Gold>25</Gold>
+             <Uranium>300</Uranium>
+             <ComponentSpacer>10</ComponentSpacer>
+             <ArchotechExoticParticles>5</ArchotechExoticParticles>
+		</costList>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Armor/ArchoHelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Archotech</li>
+			</tags>
+			<defaultOutfitTags />
+		</apparel>
+		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>HiTechArmor</li>
+			<li>Armor</li>
+		</tradeTags>
+		<comps>
+			<li>
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+    <!-- GUNLINK + -->
+     <ThingDef ParentName="ApparelArmorHelmetReconBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>ArchotechGunlink</defName>
+    <label>A.I.M..B.O.T.</label>
+    <description>GunLink upgraded by archotech, it has a ultratech ai that almost literally holds the gun for you. User barely will ever miss again. [Good shot mate!]</description>
+    <graphicData>
+      <texPath>Things/Pawn/Armor/ArchoGunLink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.3</AimingDelayFactor>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0</VacuumResistance>
+      <DecompressionResistance>0</DecompressionResistance>
+      <HypoxiaResistance>0</HypoxiaResistance>
+    </equippedStatOffsets>
+    <statBases>
+      <MaxHitPoints>5500</MaxHitPoints>
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ArchotechArmor</researchPrerequisite>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+      <AIPersonaCore>1</AIPersonaCore>
+      <ArchotechExoticParticles>4</ArchotechExoticParticles>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Armor/ArchoGunLink</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <tags>
+        <li>Archotech</li>
+      </tags>
+    </apparel>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Biocodable"/>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
+</Defs>

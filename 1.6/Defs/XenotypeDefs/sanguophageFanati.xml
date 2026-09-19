@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>sanguophageFanatic</defName>
+    <label>Sanguophage Fanatic</label>
+    <description>As known Sanguophages were created by archotech, these ones have taken this fact so seriously that they are hunting for any archotech technology now and have upgraded themselves. They also tend to believe that they are super humans.</description>
+    <descriptionShort></descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon5</iconPath>
+    <inheritable>false</inheritable>
+    <genes>
+      <li>Ageless</li>
+      <li>ArchiteMetabolism</li>
+      <li>Deathless</li>
+      <li>XenogermReimplanter</li>
+      <li>DiseaseFree</li>
+      <li>PerfectImmunity</li>
+      <li>TotalHealing</li>
+      <li MayRequire="ludeon.rimworld.odyssey">VacuumResistance_Total</li>
+      <li MayRequire="kentington.saveourship2">SoS2_Cocoon</li>
+      <li>Hemogenic</li>
+      <li>HemogenDrain</li>
+      <li>Bloodfeeder</li>
+      <li>Coagulate</li>
+      <li>Deathrest</li>
+      <li>LongjumpLegs</li>
+      <li>PiercingSpine</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>MoveSpeed_Quick</li>
+      <li>Mood_Depressive</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>ToxResist_Total</li>
+      <li>UVSensitivity_Intense</li>
+      <li>FireWeakness</li>
+      <li>FireTerror</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>LowSleep</li>
+      <li>Robust</li>
+      <li>Beauty_Pretty</li>
+      <li>Body_Standard</li>
+      <li>Body_Thin</li>
+      <li>Body_Hulk</li>
+      <li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+      <li MayRequire="ludeon.rimworld.odyssey">MoveSpeed_Space</li>
+      <li>DarkVision</li>
+      <li>CaveDweller</li>
+      <li>Unstoppable</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeStrong_Social</li>
+      <li>AptitudeStrong_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

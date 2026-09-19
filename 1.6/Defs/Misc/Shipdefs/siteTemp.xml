@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FreeWeapon</defName>
+		<saveSysVer>2</saveSysVer>
+		<offsetX>202</offsetX>
+		<offsetZ>116</offsetZ>
+		<label>HOLY CRAP! A WEAPON IS JUST FLOATING IN SPACE!</label>
+		<combatPoints>50</combatPoints>
+		<rarityLevel>0</rarityLevel>
+		<neverAttacks>True</neverAttacks>
+		<spaceSite>True</spaceSite>
+		<symbolTable>
+			<li>
+				<key>?</key>
+				<value>
+					<shapeOrDef>ArchotechHeavyGunKinetic</shapeOrDef>
+				</value>
+			</li>
+		</symbolTable>
+		<bigString>0,0,1,?</bigString>
+	</SaveOurShip2.ShipDef>
+</Defs>

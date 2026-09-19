@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingShipBase">
+		<defName>Ship_JTDriveDead</defName>
+		<label>large Johnson-Tanaka drive (dead)</label>
+		<designatorDropdown>Ship_Engines_Interplanetary</designatorDropdown>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipEngineLarge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(7.08,5.31)</drawSize>
+		</graphicData>
+		<!-- <researchPrerequisites>
+			<li>SoSJTDrive</li>
+		</researchPrerequisites> -->
+		<statBases>
+			<WorkToBuild>120000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>The component inside of this JT drive is dead, its nothing but scrap now.</description>
+		<size>(5,5)</size>
+		<receivesSignals>true</receivesSignals>
+		<!-- <designationCategory>Ship</designationCategory> -->
+		<comps>
+			<li Class="SaveOurShip2.CompProps_ShipCachePart">
+				<hermetic>true</hermetic>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="SaveOurShip2.CompProps_EngineTrail">
+				<!--graphicData>
+					<texPath>Things/Building/Ship/Ship_Engine_Trail_Energy_Large</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(11,26.5)</drawSize>
+				</graphicData-->
+				<energy>true</energy>
+				<reactionless>true</reactionless>
+				<thrust>0</thrust>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>SaveOurShip2.PlaceWorker_ShipEngine</li>
+		</placeWorkers>
+		<building>
+			<isAirtight>true</isAirtight>
+			<shipPart>true</shipPart>
+		</building>
+		<costList>
+			<Plasteel>500</Plasteel>
+			<Uranium>300</Uranium>
+			<ComponentSpacer>30</ComponentSpacer>
+			<!-- <SoSEntanglementManifold>2</SoSEntanglementManifold> -->
+		</costList>
+		<!-- <designationHotKey>Misc5</designationHotKey> -->
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_DeadReactor</defName>
+		<label>Dead reactor</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipReactorDamaged</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.71,6.67)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>9</ChunkSlagSteel>
+		</killedLeavings>
+		<tickerType>Normal</tickerType>
+		<description>Dead reactor, it is completly not functioning, just scrap now</description>
+		<size>(5,5)</size>
+		<building>
+			<claimable>false</claimable>
+		</building>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>100</Plasteel>
+			<Silver>50</Silver>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	</ThingDef>
+</Defs>

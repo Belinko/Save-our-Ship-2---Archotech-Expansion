@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ArchotechEye"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ArchotechArm"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ArchotechLeg"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechEar"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechNose"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechJaw"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechLung"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechKidney"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechLiver"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechSpine"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSArchotechSkin"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSPsychicPredictor"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="SoSPsychicManipulator"]</xpath>
+    <value>
+      <techHediffsTags>
+        <li>Archotech</li>
+      </techHediffsTags>
+    </value>
+  </Operation>
+</Patch>

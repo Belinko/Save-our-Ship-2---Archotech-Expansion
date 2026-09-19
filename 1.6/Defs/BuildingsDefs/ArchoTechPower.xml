@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+		<defName>ArchoShipCapacitor</defName>
+		<label>Archotech capacitor array</label>
+		<designatorDropdown>Ship_Capacitors</designatorDropdown>
+		<thingClass>SaveOurShip2.Building_ShipCapacitor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchoCapacitor</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>7000</WorkToBuild>
+			<Mass>200</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<description>A ship capacitor upgraded by Archotech, stores up to 25,000Wd of energy. More efficient than any modern capacitor.</description>
+		<size>(3,5)</size>
+		<costList>
+			<Steel>1000</Steel>
+			<Plasteel>250</Plasteel>
+			<ComponentSpacer>15</ComponentSpacer>
+            <ArchotechExoticParticles>5</ArchotechExoticParticles>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>15000</storedEnergyMax>
+				<efficiency>0.99</efficiency>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="RT_Fuse.CompProperties_RTFuse" MayRequire="ratys.rtfuse">
+				<compClass>RT_Fuse.CompRTFuse</compClass>
+				<surgeMitigation>10000</surgeMitigation>
+				<breakdownOnTrip>false</breakdownOnTrip>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(55,255,0,0)</glowColor>
+				<colorPickerEnabled>false</colorPickerEnabled>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Ship</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc4</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ArchotechVanometrics</li>
+		</researchPrerequisites>
+        <modExtensions>
+            <li Class = "Vehicles.CustomCostDefModExtension">
+                <cost>10000</cost>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+</Defs>

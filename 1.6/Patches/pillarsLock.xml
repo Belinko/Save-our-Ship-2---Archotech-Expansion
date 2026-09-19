@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!-- pilars -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarA"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarB"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarC"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarD"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <!-- normalResearch -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechShields"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechHeatsink"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechEngine"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechReactor"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="ArchotechMechanites"]</xpath>
+    <value>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--weapons-->
+	<SoundDef>
+		<defName>ArchLaser</defName>
+		<sustain>false</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ship/mv_ancient_beam</clipPath>
+					</li>
+				</grains>
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>90~90</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>ArchoPlasma</defName>
+		<sustain>false</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ship/mv_plasma</clipPath>
+					</li>
+				</grains>
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>80~80</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+    <SoundDef>
+		<defName>ArchoRail</defName>
+		<sustain>false</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ship/mv_ancient_laser</clipPath> <!--In FTL lasers are what railguns here are and beams are what lasers here are-->
+					</li>
+				</grains>
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>80~80</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>ArchoMissle</defName>
+		<sustain>false</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ship/mv_ancient_missile</clipPath>
+					</li>
+				</grains>
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>90~90</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

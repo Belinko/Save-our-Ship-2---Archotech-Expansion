@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name='AechoShipTurretBuildingHeavyGun']</xpath>
+		<value>
+			<thingClass>CombatExtended.Compatibility.SOS2Compat.Building_ShipTurretCE</thingClass>
+		</value>
+	</Operation>
+	<!--Laser-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName='ShipTurret_ArchoHeavyGunLaser']/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.Compatibility.SOS2Compat.VerbPropertiesShipWeaponCE">
+					<recoilAmount>0.35</recoilAmount>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<label>shoot</label>
+					<verbClass>CombatExtended.Compatibility.SOS2Compat.Verb_ShootShipCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>1000</range>
+					<minRange>31.9</minRange>
+					<warmupTime>0</warmupTime>
+					<forcedMissRadius>1</forcedMissRadius>
+					<noiseRadius>2</noiseRadius>
+					<burstShotCount>35</burstShotCount>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>Proj_ArchoShipSpinalBeamLaserHeavyGun</defaultProjectile>
+					<spawnDef>Bullet_Fake_Laser</spawnDef>
+					<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<!--Plasma-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName='ArchoTurret_HeavyGunPlasma']/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.Compatibility.SOS2Compat.VerbPropertiesShipWeaponCE">
+					<recoilAmount>0.35</recoilAmount>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<label>shoot</label>
+					<verbClass>CombatExtended.Compatibility.SOS2Compat.Verb_ShootShipCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>1500</range>
+					<minRange>31.9</minRange>
+					<warmupTime>0</warmupTime>
+					<forcedMissRadius>1</forcedMissRadius>
+					<noiseRadius>2</noiseRadius>
+					<burstShotCount>8</burstShotCount>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<soundCast>ArchoPlasma</soundCast>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>ArchoPlasmaHeavyShot</defaultProjectile>
+					<spawnDef>Bullet_Fake_Plasma_XL</spawnDef>
+					<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<!--Rail-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName='ArchotechHeavyGunKineticGun']/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.Compatibility.SOS2Compat.VerbPropertiesShipWeaponCE">
+					<recoilAmount>0.35</recoilAmount>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<label>shoot</label>
+					<verbClass>CombatExtended.Compatibility.SOS2Compat.Verb_ShootShipCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>2500</range>
+					<minRange>31.9</minRange>
+					<warmupTime>0</warmupTime>
+					<forcedMissRadius>0.1</forcedMissRadius>
+					<noiseRadius>4</noiseRadius>
+					<burstShotCount>6</burstShotCount>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<soundCast>ArchoRail</soundCast>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>Proj_ArchoShipTurretKinetic_HeavyGun</defaultProjectile>
+					<spawnDef>ArchoBullet_Fake_Kinetic</spawnDef>
+					<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<!--Secret Gun-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName='MerchantGunGun']/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.Compatibility.SOS2Compat.VerbPropertiesShipWeaponCE">
+					<recoilAmount>0.35</recoilAmount>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<label>shoot</label>
+					<verbClass>CombatExtended.Compatibility.SOS2Compat.Verb_ShootShipCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>2500</range>
+					<minRange>31.9</minRange>
+					<warmupTime>0</warmupTime>
+					<forcedMissRadius>0.1</forcedMissRadius>
+					<noiseRadius>4</noiseRadius>
+					<burstShotCount>20</burstShotCount>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<soundCast>ArchoRail</soundCast>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>Proj_MerchantGun</defaultProjectile>
+					<spawnDef>MerchantFakeBullet</spawnDef>
+					<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+
+	<!-- pointDef -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName='ShipTurret_LaserTopArcho']/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.Compatibility.SOS2Compat.VerbPropertiesShipWeaponCE">
+					<recoilAmount>0.35</recoilAmount>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<muzzleFlashScale>9</muzzleFlashScale>
+					<label>shoot</label>
+					<verbClass>CombatExtended.Compatibility.SOS2Compat.Verb_ShootShipCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>500</range>
+					<minRange>31.9</minRange>
+					<warmupTime>0</warmupTime>
+					<forcedMissRadius>0.1</forcedMissRadius>
+					<noiseRadius>4</noiseRadius>
+					<burstShotCount>12</burstShotCount>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>Proj_ShipTurretLaser</defaultProjectile>
+					<spawnDef>Bullet_Fake_Laser</spawnDef>
+					<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName='ArchotechShipTurret_Laser']</xpath>
+		<value>
+			<thingClass>CombatExtended.Compatibility.SOS2Compat.Building_ShipTurretCE</thingClass>
+		</value>
+	</Operation>
+
+		<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DamageDef[
+			defName="ArchoShipLaserTwo" or
+			defName="ArchoShipPlasmaLarge" or
+			defName="ArchoBombKineticLarge"
+			]/defaultArmorPenetration</xpath>
+		<value>
+			<defaultArmorPenetration>999999</defaultArmorPenetration>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName='archotechTorgedocannon']/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.Compatibility.SOS2Compat.VerbPropertiesShipWeaponCE">
+					<recoilAmount>0.35</recoilAmount>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<burstShotCount>6</burstShotCount>
+					<muzzleFlashScale>8</muzzleFlashScale>
+					<label>shoot torpedo</label>
+					<verbClass>CombatExtended.Compatibility.SOS2Compat.Verb_ShootShipCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<range>3000</range>
+					<minRange>31.9</minRange>
+					<warmupTime>4.0</warmupTime>
+					<forcedMissRadius>1</forcedMissRadius>
+					<noiseRadius>10</noiseRadius>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<soundCast>ArchoMissle</soundCast>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<defaultProjectile>Bullet_Torpedo_HighExplosive</defaultProjectile>
+					<spawnDef>Bullet_Fake_Torpedo_HighExplosive</spawnDef>
+					<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+
+</Patch>

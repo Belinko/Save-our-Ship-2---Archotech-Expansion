@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SaveOurShip2.NavyDef>
+    <defName>Navy_ArchotechMerchant</defName>
+    <label>Archotech Merchant Ship</label>
+    
+ 
+    <factionDefs>
+      <li>Faction_ArchotechMerchant</li>
+    </factionDefs>
+    
+  
+    <spaceShipDefs>
+      <li>TheValkyrie</li>
+      <li>TheValkyrie2</li>
+      <li>TheValkyrie3</li>
+      <li>TheValkyrie4</li>
+    </spaceShipDefs>
+    
+
+    <!-- <colorPrimary>(47, 255, 0)</colorPrimary>
+    <colorSecondary>(64, 242, 24)</colorSecondary>
+    <colorLighting>(100, 255, 100)</colorLighting> -->
+    
+  
+    <canOperateAfterFactionDefeated>true</canOperateAfterFactionDefeated>
+    <bountyHunts>false</bountyHunts>
+    <pirates>false</pirates>
+    
+
+    <crewDef>SpaceCrew</crewDef>
+    <marineDef>SpaceCrewMarine</marineDef>
+    <marineHeavyDef>SpaceCrewMarineHeavy</marineHeavyDef>
+  </SaveOurShip2.NavyDef>
+</Defs>

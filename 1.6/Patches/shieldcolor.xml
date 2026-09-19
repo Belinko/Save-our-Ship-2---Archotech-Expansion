@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ArchotechShieldGenerator"]/comps/li[@Class="SaveOurShip2.CompProps_ShipHeat"]/color</xpath>
+        <value>
+            <color>(110,255,144)</color>
+        </value>
+    </Operation>
+        <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ArchotechShieldGenerator"]/comps/li[@Class="SaveOurShip2.CompProps_ShipHeat"]/heatMultiplier</xpath>
+        <value>
+            <heatMultiplier>0.85</heatMultiplier>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ArchotechShieldGenerator"]/label</xpath>
+        <value>
+            <label>Weakned Archotech Shield Generator</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ArchotechShieldGenerator"]/description</xpath>
+        <value>
+            <description>This archotech shield generator ha been through a lot of time and battles and lost some of its own charge, weaker than normal archotech generator, but still is more powerfull than any shield you have ever seen before.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="ArchotechShieldGenerator"]/designationCategory</xpath>
+    </Operation> 
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="ArchotechShieldGenerator"]/researchPrerequisites</xpath>
+    </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_BeamArchotech"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Corner_Archo_OneOne"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Corner_Archo_OneOneFlip"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Corner_Archo_OneTwo"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Corner_Archo_OneTwoFlip"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Corner_Archo_OneThree"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Corner_Archo_OneThreeFlip"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2200</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2500</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ShipAirlockArchotech"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>2000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ShipHullTileArchotech"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>1000</MaxHitPoints> 
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Apparel_ShieldBeltArcho"]/recipeMaker/researchPrerequisite</xpath>
+    <value>
+      <researchPrerequisite>ArchotechShields</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Apparel_ShieldBeltArcho"]/statBases/EnergyShieldEnergyMax</xpath>
+    <value>
+      <EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Apparel_ShieldBeltArcho"]/statBases/EnergyShieldRechargeRate</xpath>
+    <value>
+      <EnergyShieldRechargeRate>0.4</EnergyShieldRechargeRate>
+    </value>
+  </Operation>
+</Patch>

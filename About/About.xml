@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Save our ship 2 - Archotech expansion</name>
+  <author>Belinko</author>
+  <packageId>Belinko.MoreArchotechShips</packageId>
+  <description>Adds a majority of new archotech ship hardware for sos2 and new fraction of enemy ships to fight.</description>
+   <modDependencies>
+		<li>
+			<packageId>shieldpower.ex</packageId>
+			<displayName>More Shield Belts</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3265661340</steamWorkshopUrl>
+		</li>
+
+    <li>
+			<packageId>kentington.saveourship2</packageId>
+			<displayName>Save Our Ship2</displayName>
+			<downloadUrl>https://github.com/Bqr1s/SaveOurShip2/tree/super_unstable</downloadUrl>
+		</li>
+
+    <li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>kentington.saveourship2</li>
+    <li>shieldpower.ex</li>
+	<li>CETeam.CombatExtended</li>
+	<li>VanillaExpanded.VTEXE.SOS2</li>
+	<li>Mlie.VanillaTexturesExpandedSaveOurShip2</li>
+  </loadAfter>
+  <incompatibleWith>
+		<li>PunkyRoo.NoTechprintsNeeded</li>
+	</incompatibleWith>
+  <supportedVersions>
+  <li>1.6</li>
+  </supportedVersions>
+</ModMetaData> 

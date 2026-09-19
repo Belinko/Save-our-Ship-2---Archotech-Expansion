@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ResearchProjectDef ParentName="ArchotechResearchProjectBase">
+    <defName>ArchotechScanners</defName>
+    <label>Archotech Scanner</label>
+    <description>Design new powerfull archotech long range scanners.</description>
+    <baseCost>5000</baseCost>
+      <researchViewX>2</researchViewX>
+      <researchViewY>0</researchViewY>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="ArchotechResearchProjectBase">
+    <defName>ArchotechArmor</defName>
+    <label>Archotech Armor</label>
+    <description>Design powerfull archotech armor, no other can compete with it.</description>
+    <baseCost>7000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>0.0</techprintCommonality>
+    <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="ArchotechResearchProjectBase">
+    <defName>ArchotechWeapons</defName>
+    <label>Archotec Charged Weapons</label>
+    <description>Design new powerfull weapons charged with ancient power.</description>
+    <baseCost>9000</baseCost>
+    <prerequisites>
+      <li>ArchotechMechanites</li>
+    </prerequisites>
+      <researchViewX>5</researchViewX>
+      <researchViewY>0</researchViewY>
+      <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="ArchotechResearchProjectBase">
+    <defName>ArchoMissle</defName>
+    <label>Archotech torpedo printer</label>
+    <description>Design powerfull archotech Torpedo printer that prints torpedos and shoots them for you!</description>
+    <baseCost>10000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <techprintCount>1</techprintCount>
+      <techprintCommonality>0.0</techprintCommonality>
+      <techprintMarketValue>2500</techprintMarketValue>
+      <heldByFactionCategoryTags>
+        <li>ArchotechFanaticsFrac</li>
+        <li>ArchotechMerchant</li>
+      </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="ArchotechResearchProjectBase">
+    <defName>ArchotechShipHeavyGuns</defName>
+    <label>Archotech Ship Heavy Guns</label>
+    <description>Design new powerfull ship weapons charged with ancient power.</description>
+    <baseCost>9000</baseCost>
+      <researchViewX>6</researchViewX>
+      <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+</Defs>

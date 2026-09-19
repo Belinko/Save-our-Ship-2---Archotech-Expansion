@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs> 
+  <ThingDef Name="ArchotechLootBox" ParentName="CrateBase">
+      <defName>ArchotechSealedCrateBase</defName>
+      <label>Archotech tech database</label>
+      <description>A database crate containing archotech technology, your spore has already bypassed all protection, if you capture the ship, this powerful technology will be yours</description>
+      <graphicData>
+        <texPath>Things/Building/Misk/ArchoBox</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+      </graphicData>
+      <size>(2,2)</size>
+      <fillPercent>0.2</fillPercent>
+      <statBases>
+        <MaxHitPoints>2000</MaxHitPoints>
+      </statBases>
+      <rotatable>false</rotatable>
+      <comps>
+        <li Class="CompProperties_EmptyStateGraphic">
+          <graphicData>
+            <texPath>Things/Building/Misk/ArchoBoxOpen</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+          </graphicData>
+        </li>
+        <li Class="CompProperties_Glower">
+      <glowRadius>3</glowRadius>
+      <glowColor>(55,255,0,0)</glowColor>
+      <colorPickerEnabled>false</colorPickerEnabled>
+      </li>
+      </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="ArchotechLootBox">
+      <defName>ArchotechTechBox</defName>
+      <comps>
+        <li Class="CompProperties_LootSpawn">
+          <contents>Reward_ArchotechTechprintCache</contents>
+        </li>
+      </comps>
+    </ThingDef>
+<!-- pillarBox -->
+    <ThingDef Name="ArchotechPillarCrate" ParentName="CrateBase">
+      <defName>ArchotechSealedCratePillar</defName>
+      <label>Archotech pillar database</label>
+      <description>A database crate containing information about pillar location, your spore has already bypassed all protection, if you capture the ship, you will be able to locate it!</description>
+      <graphicData>
+        <texPath>Things/Building/Misk/ArchoBoxPillar</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+      </graphicData>
+      <size>(2,2)</size>
+      <fillPercent>0.2</fillPercent>
+      <statBases>
+        <MaxHitPoints>2000</MaxHitPoints>
+      </statBases>
+      <rotatable>false</rotatable>
+      <comps>
+        <li Class="CompProperties_EmptyStateGraphic">
+          <graphicData>
+            <texPath>Things/Building/Misk/ArchoBoxPillarOpen</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+          </graphicData>
+        </li>
+        <li Class="CompProperties_Glower">
+      <glowRadius>3</glowRadius>
+      <glowColor>(55,255,0,0)</glowColor>
+      <colorPickerEnabled>false</colorPickerEnabled>
+      </li>
+      </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="ArchotechPillarCrate">
+      <defName>ArchotechPillarBox</defName>
+      <comps>
+        <li Class="CompProperties_LootSpawn">
+          <contents>Reward_ArchotechTechprintCachePillars</contents>
+        </li>
+      </comps>
+    </ThingDef>
+</Defs>

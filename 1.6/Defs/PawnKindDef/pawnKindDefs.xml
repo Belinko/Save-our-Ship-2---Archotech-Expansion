@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<PawnKindDef ParentName="OutlanderBase">
+    <defName>sanguophageFanaticsMelee</defName>
+    <label>sanguophage fanatics</label>
+    <race>Human</race>
+    <combatPower>650</combatPower> 
+    <defaultFactionDef>ArchotechFanaticsFrac</defaultFactionDef>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance> 
+
+    <xenotypeSet>
+        <xenotypeChances>
+            <sanguophageFanatic>1.0</sanguophageFanatic>
+        </xenotypeChances>
+    </xenotypeSet>
+    
+    <apparelMoney>30000~40000</apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelTags>
+      <li>Archotech</li>
+    </apparelTags>
+    <apparelDisallowTags>
+      <li>IndustrialBasic</li>
+      <li>Western</li>
+    </apparelDisallowTags>
+    <apparelRequired>
+        <li>ArchotechArmor</li>
+        <li>ArchotechHelmet</li>
+        <li>Apparel_ShieldBeltArcho</li>
+        <li>Apparel_Pants</li>
+        <li>Apparel_BasicShirt</li>
+    </apparelRequired>
+ 
+    <techHediffsRequired>
+        <li>SoSArchotechHeart</li>
+        <li>SoSArchotechStomach</li>
+        <li>ArchotechEye</li>
+    </techHediffsRequired>
+    
+    <techHediffsTags>
+        <li>Archotech</li>      
+        <li>Advanced</li>
+        <li>ImplantEmpireCommon</li>
+        <li>ImplantEmpireRoyal</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsMoney>75000~200000</techHediffsMoney>
+    <techHediffsChance>0.8</techHediffsChance> 
+    <techHediffsMaxAmount>20</techHediffsMaxAmount> 
+    
+    <biocodeWeaponChance>0.5</biocodeWeaponChance>
+    <weaponMoney>15000~30000</weaponMoney>
+    <weaponTags>
+        <li>ArchotechWeaponMelee</li>
+        <li>Bladelink</li>
+        <li>UltratechMelee</li>
+    </weaponTags>
+    <skills>
+        <li>
+            <skill>Shooting</skill>
+            <range>5~7</range>
+        </li>
+        <li>
+            <skill>Melee</skill>
+            <range>5~18</range>
+        </li>
+        <li>
+            <skill>Intellectual</skill>
+            <range>8~15</range>
+        </li>
+        <li>
+            <skill>Social</skill>
+            <range>6~12</range>
+        </li>
+    </skills>
+    
+    <initialWillRange>8~12</initialWillRange>
+    <initialResistanceRange>30~40</initialResistanceRange>
+    <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>
+        <min>0</min>
+        <max>3</max>
+    </combatEnhancingDrugsCount>
+    
+    
+    <disallowedTraits>
+        <li>Wimp</li>
+        <li>SlowLearner</li>
+        <li>BodyPurist</li>
+    </disallowedTraits>
+    
+    
+    <maxGenerationAge>2000</maxGenerationAge> 
+</PawnKindDef>
+
+<!-- gun -->
+<PawnKindDef ParentName="OutlanderBase">
+    <defName>sanguophageFanaticsGun</defName>
+    <label>sanguophage fanatics</label>
+    <race>Human</race>
+    <combatPower>650</combatPower> 
+    <defaultFactionDef>ArchotechFanaticsFrac</defaultFactionDef>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance> 
+
+    <xenotypeSet>
+        <xenotypeChances>
+            <sanguophageFanatic>1.0</sanguophageFanatic>
+        </xenotypeChances>
+    </xenotypeSet>
+    
+    <apparelMoney>30000~40000</apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelTags>
+      <li>Archotech</li>
+    </apparelTags>
+    <apparelDisallowTags>
+      <li>IndustrialBasic</li>
+      <li>Western</li>
+    </apparelDisallowTags>
+    <apparelRequired>
+        <li>ArchotechArmor</li>
+        <li>Apparel_ShieldBeltArcho</li>
+        <li>Apparel_Pants</li>
+        <li>Apparel_BasicShirt</li>
+    </apparelRequired>
+ 
+    <techHediffsRequired>
+        <li>SoSArchotechHeart</li>
+        <li>SoSArchotechStomach</li>
+        <li>ArchotechEye</li>
+    </techHediffsRequired>
+    
+    <techHediffsTags>
+        <li>Archotech</li>      
+        <li>Advanced</li>
+        <li>ImplantEmpireCommon</li>
+        <li>ImplantEmpireRoyal</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsMoney>75000~200000</techHediffsMoney>
+    <techHediffsChance>0.8</techHediffsChance> 
+    <techHediffsMaxAmount>20</techHediffsMaxAmount> 
+    
+    <biocodeWeaponChance>0.5</biocodeWeaponChance>
+    <weaponMoney>15000~30000</weaponMoney>
+    <weaponTags>
+        <li>ArchotechWeaponGun</li>
+        <li>SpacerGun</li>
+    </weaponTags>
+    <skills>
+        <li>
+            <skill>Shooting</skill>
+            <range>7~16</range>
+        </li>
+        <li>
+            <skill>Melee</skill>
+            <range>5~6</range>
+        </li>
+        <li>
+            <skill>Intellectual</skill>
+            <range>8~15</range>
+        </li>
+        <li>
+            <skill>Social</skill>
+            <range>6~12</range>
+        </li>
+    </skills>
+    
+    <initialWillRange>8~12</initialWillRange>
+    <initialResistanceRange>30~40</initialResistanceRange>
+    <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>
+        <min>0</min>
+        <max>3</max>
+    </combatEnhancingDrugsCount>
+    
+    
+    <disallowedTraits>
+        <li>Wimp</li>
+        <li>SlowLearner</li>
+        <li>BodyPurist</li>
+    </disallowedTraits>
+    
+    
+    <maxGenerationAge>2000</maxGenerationAge> 
+</PawnKindDef>
+<!-- grenade -->
+<PawnKindDef ParentName="OutlanderBase">
+    <defName>sanguophageFanaticsDemo</defName>
+    <label>sanguophage fanatics</label>
+    <race>Human</race>
+    <combatPower>650</combatPower> 
+    <defaultFactionDef>ArchotechFanaticsFrac</defaultFactionDef>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance> 
+
+    <xenotypeSet>
+        <xenotypeChances>
+            <sanguophageFanatic>1.0</sanguophageFanatic>
+        </xenotypeChances>
+    </xenotypeSet>
+    
+    <apparelMoney>30000~40000</apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelTags>
+      <li>Archotech</li>
+    </apparelTags>
+    <apparelDisallowTags>
+      <li>IndustrialBasic</li>
+      <li>Western</li>
+    </apparelDisallowTags>
+    <apparelRequired>
+        <li>ArchotechArmor</li>
+        <li>Apparel_ShieldBeltArcho</li>
+        <li>Apparel_Pants</li>
+        <li>Apparel_BasicShirt</li>
+    </apparelRequired>
+ 
+    <techHediffsRequired>
+        <li>SoSArchotechHeart</li>
+        <li>SoSArchotechStomach</li>
+        <li>ArchotechEye</li>
+    </techHediffsRequired>
+    
+    <techHediffsTags>
+        <li>Archotech</li>      
+        <li>Advanced</li>
+        <li>ImplantEmpireCommon</li>
+        <li>ImplantEmpireRoyal</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsMoney>75000~200000</techHediffsMoney>
+    <techHediffsChance>0.8</techHediffsChance> 
+    <techHediffsMaxAmount>20</techHediffsMaxAmount> 
+    
+    <biocodeWeaponChance>0.5</biocodeWeaponChance>
+    <weaponMoney>15000~20000</weaponMoney>
+    <weaponTags>
+        <li>ArchotechWeaponLauncher</li>
+        <li>GunHeavy</li>
+    </weaponTags>
+    <skills>
+        <li>
+            <skill>Shooting</skill>
+            <range>5~7</range>
+        </li>
+        <li>
+            <skill>Melee</skill>
+            <range>5~18</range>
+        </li>
+        <li>
+            <skill>Intellectual</skill>
+            <range>8~15</range>
+        </li>
+        <li>
+            <skill>Social</skill>
+            <range>6~12</range>
+        </li>
+    </skills>
+    
+    <initialWillRange>8~12</initialWillRange>
+    <initialResistanceRange>30~40</initialResistanceRange>
+    <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>
+        <min>0</min>
+        <max>3</max>
+    </combatEnhancingDrugsCount>
+    
+    
+    <disallowedTraits>
+        <li>Wimp</li>
+        <li>SlowLearner</li>
+        <li>BodyPurist</li>
+    </disallowedTraits>
+    
+    
+    <maxGenerationAge>2000</maxGenerationAge> 
+</PawnKindDef>
+
+</Defs>

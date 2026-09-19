@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+      <!-- Unique Archotech Charge Rifle -->
+      <ThingDef ParentName="Gun_ArchotechChargeRifle">
+        <defName>Gun_ArchotechChargeRifle_Unique</defName>
+        <label>unique archotech charge rifle</label>
+        <description>An archotech charge rifle with customized parts.</description>
+        <graphicData>
+          <texPath>Things/Weapons/ArchoRifle</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Styleable"/>
+          <li Class="CompProperties_Biocodable"/>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <weaponCategories>
+              <li>Ranged</li>
+              <li>BulletFiring</li>
+              <li>Gun</li>
+              <li>BurstFire</li>
+              <li>Rifle</li>
+              <li>Sighted</li>
+              <li>Attachable</li>
+            </weaponCategories>
+            <namerLabels>
+              <li>Archotech rifle</li>
+              <li>Starfall</li>
+              <li>Ol Reliable</li>
+              <li>Shine</li>
+              <li>Void rifle</li>
+              <li>Celestial lance</li>
+              <li>Marvel of engineering</li>
+            </namerLabels>
+          </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>All</tradeability>
+        <thingSetMakerTags Inherit="False">
+          <li>RewardStandardLowFreq</li>
+          <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+          <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+          <ThingDef>Gun_ArchotechChargeRifle</ThingDef>
+        </descriptionHyperlinks>
+      </ThingDef>
+
+      <!-- Unique Archotech SMG -->
+      <ThingDef ParentName="Gun_ArchotechChargeSMG">
+        <defName>Gun_ArchotechChargeSMG_Unique</defName>
+        <label>unique archotech SMG</label>
+        <description>An archotech SMG with customized parts.</description>
+        <graphicData>
+          <texPath>Things/Weapons/ArchoSMG</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Styleable"/>
+          <li Class="CompProperties_Biocodable"/>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <weaponCategories>
+              <li>Ranged</li>
+              <li>BulletFiring</li>
+              <li>Gun</li>
+              <li>BurstFire</li>
+              <li>Rifle</li>
+              <li>Sighted</li>
+              <li>Attachable</li>
+            </weaponCategories>
+            <namerLabels>
+              <li>Archotech SMG</li>
+              <li>Kriss</li>
+              <li>Green vector</li>
+              <li>I need scissors</li>
+              <li>Call of void</li>
+              <li>Black mirror</li>
+            </namerLabels>
+          </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>All</tradeability>
+        <thingSetMakerTags Inherit="False">
+          <li>RewardStandardLowFreq</li>
+          <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+          <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+          <ThingDef>Gun_ArchotechChargeSMG</ThingDef>
+        </descriptionHyperlinks>
+      </ThingDef>
+
+      <!-- Unique Archotech Revolver -->
+      <ThingDef ParentName="Gun_ArchotechRevolver">
+        <defName>Gun_ArchotechRevolver_Unique</defName>
+        <label>unique archotech revolver</label>
+        <description>An archotech revolver with customized parts.</description>
+        <graphicData>
+          <texPath>Things/Weapons/ArchoRev</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Styleable"/>
+          <li Class="CompProperties_Biocodable"/>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <weaponCategories>
+              <li>Ranged</li>
+              <li>BulletFiring</li>
+              <li>Gun</li>
+              <li>Pistol</li>
+              <li>Sighted</li>
+            </weaponCategories>
+            <namerLabels>
+              <li>Archotech revolver</li>
+              <li>Green slab piercer revolver</li>
+              <li>Event horizon</li>
+              <li>N.O.V.A</li>
+              <li>Cosmic six shooter</li>
+              <li>Orbital magnum</li>
+            </namerLabels>
+          </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>All</tradeability>
+        <thingSetMakerTags Inherit="False">
+          <li>RewardStandardLowFreq</li>
+          <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+          <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+          <ThingDef>Gun_ArchotechRevolver</ThingDef>
+        </descriptionHyperlinks>
+      </ThingDef>
+
+      <!-- Unique Archotech Shotgun -->
+      <ThingDef ParentName="Gun_ArchotechShotgun">
+        <defName>Gun_ArchotechShotgun_Unique</defName>
+        <label>unique archotech shotgun</label>
+        <description>An archotech shotgun with customized parts.</description>
+        <graphicData>
+          <texPath>Things/Weapons/ArchoShotgun</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Styleable"/>
+          <li Class="CompProperties_Biocodable"/>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <weaponCategories>
+              <li>Ranged</li>
+              <li>PelletFiring</li>
+              <li>Gun</li>
+              <li>Shotgun</li>
+              <li>Sighted</li>
+            </weaponCategories>
+            <namerLabels>
+              <li>Archotech shotgun</li>
+              <li>Star spreader</li>
+              <li>Void scatter</li>
+              <li>Next time eat a salad</li>
+              <li>Frontier justice</li>
+            </namerLabels>
+          </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>All</tradeability>
+        <thingSetMakerTags Inherit="False">
+          <li>RewardStandardLowFreq</li>
+          <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+          <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+          <ThingDef>Gun_ArchotechShotgun</ThingDef>
+        </descriptionHyperlinks>
+      </ThingDef>
+
+      <!-- Unique Archotech LMG -->
+      <ThingDef ParentName="Gun_ArchotechLMG">
+        <defName>Gun_ArchotechLMG_Unique</defName>
+        <label>unique archotech LMG</label>
+        <description>An archotech LMG with customized parts.</description>
+        <graphicData>
+          <texPath>Things/Weapons/ArchotechLMG</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Styleable"/>
+          <li Class="CompProperties_Biocodable"/>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <weaponCategories>
+              <li>Ranged</li>
+              <li>BulletFiring</li>
+              <li>Gun</li>
+              <li>BurstFire</li>
+              <li>Rifle</li>
+              <li>Sighted</li>
+            </weaponCategories>
+            <namerLabels>
+              <li>Archotech LMG</li>
+              <li>Heavy weapons guy</li>
+              <li>Yatatatatatata</li>
+              <li>Void bulletstorm</li>
+              <li>Orbital rain</li>
+            </namerLabels>
+          </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>All</tradeability>
+        <thingSetMakerTags Inherit="False">
+          <li>RewardStandardLowFreq</li>
+          <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+          <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+          <ThingDef>Gun_ArchotechLMG</ThingDef>
+        </descriptionHyperlinks>
+      </ThingDef>
+
+      <!-- Unique Archotech Sniper Rifle -->
+      <ThingDef ParentName="Gun_ArchotechSniperRifle">
+        <defName>Gun_ArchotechSniperRifle_Unique</defName>
+        <label>unique archotech sniper rifle</label>
+        <description>An archotech sniper rifle with customized parts.</description>
+        <graphicData>
+          <texPath>Things/Weapons/ArchoSniperRifle</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Styleable"/>
+          <li Class="CompProperties_Biocodable"/>
+          <li>
+            <compClass>CompQuality</compClass>
+          </li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <weaponCategories>
+              <li>Ranged</li>
+              <li>BulletFiring</li>
+              <li>Gun</li>
+              <li>Rifle</li>
+              <li>Sighted</li>
+            </weaponCategories>
+            <namerLabels>
+              <li>archotech sniper</li>
+              <li>sniper is a good job mate</li>
+              <li>cosmic reach</li>
+              <li>void piercer</li>
+              <li>orbital assassin</li>
+            </namerLabels>
+          </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>All</tradeability>
+        <thingSetMakerTags Inherit="False">
+          <li>RewardStandardLowFreq</li>
+          <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+          <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+          <ThingDef>Gun_ArchotechSniperRifle</ThingDef>
+        </descriptionHyperlinks>
+      </ThingDef>
+</Defs>

@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Save our ship 2 - Archotech expansion</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+     <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="Base556x45mmNATOBullet">
+                <defName>Bullet_ArchotechChargeRifle_CE</defName>
+                <label>Archotech rifle shot</label>
+              <graphicData>
+               <texPath>Things/Projectile/Charge_Archo</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                </graphicData>		
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>25</damageAmountBase>
+                <armorPenetrationSharp>160</armorPenetrationSharp>
+                <armorPenetrationBlunt>160</armorPenetrationBlunt>
+                <speed>65</speed>
+              </projectile>       
+            </ThingDef>
+
+
+
+            <ThingDef ParentName="Base556x45mmNATOBullet">
+              <defName>Bullet_ArchotechChargeSMG_CE</defName>
+              <label>archotech charge shot</label>
+              <graphicData>
+                <texPath>Things/Projectile/Charge_Archo</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>20</damageAmountBase>
+                <armorPenetrationSharp>155</armorPenetrationSharp>
+                <armorPenetrationBlunt>155</armorPenetrationBlunt>
+                <speed>60</speed>
+              </projectile>
+            </ThingDef>
+
+    
+            <ThingDef ParentName="Base556x45mmNATOBullet">
+              <defName>Bullet_ArchotechChargeRev_CE</defName>
+              <label>archotech charge shot</label>
+              <graphicData>
+                <texPath>Things/Projectile/Charge_Archo</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.5</drawSize>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>60</damageAmountBase>
+                <armorPenetrationSharp>700</armorPenetrationSharp>
+                <armorPenetrationBlunt>700</armorPenetrationBlunt>
+                <speed>70</speed>
+              </projectile>
+            </ThingDef>
+
+
+            <ThingDef ParentName="Base556x45mmNATOBullet">
+              <defName>Bullet_ArchotechShotgun_CE</defName>
+              <label>archotech charge shot</label>
+              <graphicData>
+                <texPath>Things/Projectile/Charge_ArchoShotgunShot</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.2</drawSize>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>900</damageAmountBase>
+                <armorPenetrationSharp>5000</armorPenetrationSharp>
+                <armorPenetrationBlunt>5000</armorPenetrationBlunt>
+                <!-- <pelletCount>4</pelletCount>
+                <spreadMult>15</spreadMult> -->
+                <speed>80</speed>
+              </projectile>
+            </ThingDef>
+
+
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Bullet_ArchotechPinkGrenade_CE</defName>
+              <label>pink goo grenade</label>
+              <graphicData>
+                <texPath>Things/Projectile/ArchoGrenadeLauncherShot</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>BombMechanite</damageDef>
+                <damageAmountBase>5</damageAmountBase>
+                <explosionRadius>1.5</explosionRadius>
+                <speed>40</speed>
+                <flyOverhead>false</flyOverhead>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+              </projectile>
+            </ThingDef>
+
+   
+            <ThingDef ParentName="BaseGrenadeProjectile">
+              <defName>Bullet_ArchotechGreenGrenade_CE</defName>
+              <label>plasma grenade</label>
+              <graphicData>
+                <texPath>Things/Projectile/ArchoGrenadeLauncherShotGr</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bomb</damageDef>
+                <damageAmountBase>310</damageAmountBase>
+                <explosionRadius>2.0</explosionRadius>
+                <speed>30</speed>
+                <flyOverhead>false</flyOverhead>
+                <!-- <armorPenetrationSharp>0.1</armorPenetrationSharp>
+                <armorPenetrationBlunt>0.1</armorPenetrationBlunt> -->
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+              </projectile>
+            </ThingDef>
+
+            <ThingDef ParentName="Base556x45mmNATOBullet">
+              <defName>Bullet_ArchotechLMG_CE</defName>
+              <label>archotech LMG shot</label>
+              <graphicData>
+                <texPath>Things/Projectile/Charge_Archo</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>TransparentPostLight</shaderType>
+                <drawSize>1</drawSize>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>25</damageAmountBase>
+                <armorPenetrationSharp>160</armorPenetrationSharp>
+                <armorPenetrationBlunt>160</armorPenetrationBlunt>
+                <speed>65</speed>
+              </projectile>
+            </ThingDef>
+
+            <ThingDef ParentName="Base556x45mmNATOBullet">
+              <defName>Bullet_ArchotechSniper_CE</defName>
+              <label>archotech sniper shot</label>
+              <graphicData>
+                <texPath>Things/Projectile/ArchoShipRailgun</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                 <drawSize>1.7</drawSize>
+              </graphicData>
+              <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>75</damageAmountBase>
+                <armorPenetrationSharp>9999</armorPenetrationSharp>
+                <armorPenetrationBlunt>9999</armorPenetrationBlunt>
+                <speed>100</speed>
+              </projectile>
+            </ThingDef>
+
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[
+            defName = "Gun_ArchotechChargeRifle" or
+            defName = "Gun_ArchotechChargeSMG" or
+            defName = "Gun_ArchotechShotgun" or
+            defName = "Gun_ArchotechLMG" or
+            defName = "Gun_ArchotechSniperRifle"
+          ]/tools</xpath>
+          <value>
+            <tools>
+              <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>1.55</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+              </li>
+              <li Class="CombatExtended.ToolCE">
+                <label>barrel</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>2.02</cooldownTime>
+                <armorPenetrationBlunt>1.6</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+              </li>
+              <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                  <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2.7</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "Gun_ArchotechRevolver"]/tools</xpath>
+          <value>
+            <tools>
+              <li Class="CombatExtended.ToolCE">
+                <label>grip</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.54</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+              </li>
+              <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                  <li>Poke</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[
+            defName = "Gun_ArchotechPinkGooLauncher" or
+            defName = "Gun_ArchotechGrenadeLauncher"
+          ]/tools</xpath>
+          <value>
+            <tools>
+              <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.55</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>2.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+              </li>
+              <li Class="CombatExtended.ToolCE">
+                <label>barrel</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.02</cooldownTime>
+                <armorPenetrationBlunt>2.3</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+
+        <!-- Guns -->
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechChargeRifle</defName>
+          <statBases>
+            <Mass>4.5</Mass>
+            <Bulk>7.00</Bulk>
+            <SwayFactor>1.20</SwayFactor>
+            <ShotSpread>0.04</ShotSpread>
+            <SightsEfficiency>1.5</SightsEfficiency>
+            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechChargeRifle_CE</defaultProjectile>
+            <warmupTime>1.0</warmupTime>
+            <range>60</range>
+            <burstShotCount>4</burstShotCount>
+            <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+            <soundCast>Shot_ChargeRifle</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>2.5</recoilAmount>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>30</magazineSize>
+            <reloadTime>4</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aimedBurstShotCount>4</aimedBurstShotCount>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponGun</li>
+            <li>CE_AI_AR</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechChargeSMG</defName>
+          <statBases>
+            <Mass>2.0</Mass>
+            <Bulk>2.00</Bulk>
+            <SwayFactor>1.50</SwayFactor>
+            <ShotSpread>0.15</ShotSpread>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechChargeSMG_CE</defaultProjectile>
+            <warmupTime>0.1</warmupTime>
+            <range>25</range>
+            <burstShotCount>6</burstShotCount>
+            <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+            <soundCast>Shot_ChargeBlaster</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>0.01</recoilAmount>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>40</magazineSize>
+            <reloadTime>4</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+            <aimedBurstShotCount>6</aimedBurstShotCount>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponGun</li>
+            <li>CE_SMG</li>
+            <li>CE_AI_BROOM</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechRevolver</defName>
+          <statBases>
+            <Mass>2</Mass>
+            <Bulk>1.5</Bulk>
+            <SwayFactor>1.00</SwayFactor>
+            <ShotSpread>0.03</ShotSpread>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechChargeRev_CE</defaultProjectile>
+            <warmupTime>0.3</warmupTime>
+            <range>35</range>
+            <burstShotCount>1</burstShotCount>
+            <soundCast>Shot_ChargeRifle</soundCast>
+            <soundCastTail>GunTail_Light</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+             <recoilAmount>5.7</recoilAmount>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>6</magazineSize>
+            <reloadTime>3</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponGun</li>
+            <li>CE_SpacerSidearm</li>
+            <li>CE_OneHandedWeapon</li>
+            <li>Revolver</li>
+            <li>CE_AI_BROOM</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechShotgun</defName>
+          <statBases>
+            <Mass>3</Mass>
+            <Bulk>6</Bulk>
+            <SwayFactor>3.20</SwayFactor>
+            <ShotSpread>1.10</ShotSpread>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechShotgun_CE</defaultProjectile>
+            <warmupTime>0.6</warmupTime>
+            <range>12</range>
+            <burstShotCount>2</burstShotCount>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <soundCast>Shot_ChargeBlaster</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>7</recoilAmount>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>2</magazineSize>
+            <reloadTime>2.7</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+            <aiUseBurstMode>True</aiUseBurstMode>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponGun</li>
+ 		        <li>CE_AI_BROOM</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechPinkGooLauncher</defName>
+          <statBases>
+            <Mass>7</Mass>
+            <Bulk>14</Bulk>
+            <SwayFactor>1.50</SwayFactor>
+            <ShotSpread>0.10</ShotSpread>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>4.20</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechPinkGrenade_CE</defaultProjectile>
+            <warmupTime>2.5</warmupTime>
+            <range>40</range>
+            <burstShotCount>1</burstShotCount>
+            <soundCast>Shot_ChargeRifle</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>12</muzzleFlashScale>
+            <recoilAmount>4</recoilAmount>
+            <!-- <forcedMissRadius>2.5</forcedMissRadius> -->
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>4</magazineSize>
+            <reloadTime>8</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponLauncher</li>
+            <li>CE_GrenadeLauncher</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechGrenadeLauncher</defName>
+          <statBases>
+            <Mass>7</Mass>
+            <Bulk>14</Bulk>
+            <SwayFactor>1.50</SwayFactor>
+            <ShotSpread>0.10</ShotSpread>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>4.20</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechGreenGrenade_CE</defaultProjectile>
+            <warmupTime>2.5</warmupTime>
+            <range>40</range>
+            <burstShotCount>1</burstShotCount>
+            <soundCast>Shot_ChargeRifle</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>12</muzzleFlashScale>
+            <recoilAmount>4</recoilAmount>
+            <!-- <forcedMissRadius>1.5</forcedMissRadius> -->
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>4</magazineSize>
+            <reloadTime>5</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponLauncher</li>
+            <li>CE_GrenadeLauncher</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechLMG</defName>
+          <statBases>
+            <Mass>8</Mass>
+            <Bulk>10</Bulk>
+            <SwayFactor>1.40</SwayFactor>
+            <ShotSpread>0.05</ShotSpread>
+            <SightsEfficiency>0.8</SightsEfficiency>
+            <RangedWeapon_Cooldown>2.20</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechLMG_CE</defaultProjectile>
+            <warmupTime>1.8</warmupTime>
+            <range>35</range>
+            <burstShotCount>25</burstShotCount>
+            <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+            <soundCast>Shot_ChargeRifle</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>3</recoilAmount>
+            <recoilPattern>Regular</recoilPattern>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>100</magazineSize>
+            <reloadTime>6</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>SuppressFire</aiAimMode>
+            <aimedBurstShotCount>10</aimedBurstShotCount>
+            <noSingleShot>true</noSingleShot>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponGun</li>
+            <li>CE_MachineGun</li>
+            <li>CE_AI_LMG</li>
+            <li>Bipod_LMG</li>
+          </weaponTags>
+        </li>
+
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>Gun_ArchotechSniperRifle</defName>
+          <statBases>
+            <Mass>4</Mass>
+            <Bulk>8</Bulk>
+            <SwayFactor>0.80</SwayFactor>
+            <ShotSpread>0.02</ShotSpread>
+            <SightsEfficiency>2.5</SightsEfficiency>
+            <RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
+          </statBases>
+          <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_ArchotechSniper_CE</defaultProjectile>
+            <warmupTime>3.0</warmupTime>
+            <range>75</range>
+            <burstShotCount>1</burstShotCount>
+            <soundCast>Shot_ChargeRifle</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>6</recoilAmount>
+            <stopBurstWithoutLos>false</stopBurstWithoutLos>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>4</magazineSize>
+            <reloadTime>4</reloadTime>
+          </AmmoUser>
+          <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+          </FireModes>
+          <weaponTags>
+            <li>ArchotechWeaponGun</li>
+            <li>SniperRifle</li>
+            <li>AdvancedGun</li>
+            <li>CE_AI_SR</li>
+            <li>Bipod_DMR</li>
+          </weaponTags>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!-- Description -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechChargeRifle"]/description</xpath>
+    <value>
+      <description>A charge rifle upgraded with the power of Archotech, you cant even imagine how much power each shot has. It also glows with a mysterious force. \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechChargeSMG"]/description</xpath>
+    <value>
+      <description>A charge SMG upgraded with the power of Archotech, Its very light making it really easy and fast to use, but it loses a lot of accuracy at longer range. It also glows with a mysterious force. \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechRevolver"]/description</xpath>
+    <value>
+      <description>An Archotewch power charged revolver, it glows with mysterious power. \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechShotgun"]/description</xpath>
+    <value>
+      <description>A shotgun charged and upgraded by Archotech, it is charged with a mysterious force that can penetrate most of the known armor and cause devastating damage. \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechPinkGooLauncher"]/description</xpath>
+    <value>
+      <description>A grenade launcher upgraded with the power of a strange pink substance...... You dont want to even imagine what will happen if you fire that thing. \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechGrenadeLauncher"]/description</xpath>
+    <value>
+      <description>A grenade launcher upgraded with the power Archotech....Its explosion is capable of destroying the stronges structures you've ever known. [Not one of ya gonna survive this!] \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechLMG"]/description</xpath>
+    <value>
+      <description>A LMG charged and upgraded by Archotech, it is charged with a mysterious force and can fire for a long time without overheating. \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Gun_ArchotechSniperRifle"]/description</xpath>
+    <value>
+      <description>A Sniper rifle charged and upgraded by Archotech, it is charged with a mysterious force, almost no armor can save from it. [Wave goodbye to your head wanker!] \n\n(Like all Archotech weapons, it uses a vanometric reactor to create the projectiles, making it to require no physical ammo to shoot, but due to the lack of space, it is required to open the reactor holder in order to let it to cool down, so there is still some sort of reloading)</description>
+    </value>
+  </Operation>
+
+
+
+  <!-- Armor -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ArchotechArmor"]/description</xpath>
+    <value>
+      <description>An armor designed by archotech, it weighs quite few yet gives the best defence you could even imagine, it boosts psychic sensitivity, gives the user an invisible barrier that protects the from vacuum heat and cold, and is almost impossible to even scratch. It also comes with a very mini version of the archotech box shuttle upgrade in the pocket, allowing the user to carry a lot of stuff.\n\n(When facing an archotech class weapon, its not likely gonna be able to fully stop the shot, but will significantly increase the amount of shots the pawn can take before falling down, this is why it is highly recommended to equip your pawns with archotech shield belts [the do work with guns] or protect them behind shielded pawns or mechs with shield generators)</description>
+    </value>
+  </Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechArmor"]/statBases</xpath>
+		<value>
+			<Bulk>30</Bulk>
+			<WornBulk>6</WornBulk>
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ArchotechArmor"]/equippedStatOffsets</xpath>
+		<value>
+			<CarryWeight>95</CarryWeight>
+			<CarryBulk>15</CarryBulk>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ArchotechArmor"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>80</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ArchotechArmor"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>90</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechArmor"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+			<li>Neck</li>
+		</value>
+	</Operation>
+
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ArchotechArmor"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Torso</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Foot</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<NightVisionEfficiency_Apparel>1</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>80</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>90</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>100</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/statBases/Flammability</xpath>
+		<value>
+			<Flammability>0.01</Flammability>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/equippedStatOffsets</xpath>
+		<value>
+			<AimingAccuracy>0.35</AimingAccuracy>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/apparel</xpath>
+		<value>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+      <bodyPartGroups> <li>FullHead</li> </bodyPartGroups>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/apparel/layers</xpath>
+		<value>
+			<li>OnHead</li>
+			<li>StrappedHead</li>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>80</ArmorRating_Sharp>
+						<ArmorRating_Blunt>90</ArmorRating_Blunt>
+						<parts>
+							<li>Nose</li>
+              <li>Jaw</li>
+              <li>Ear</li>
+              <li>Eye</li>
+              <li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechArmor"]/equippedStatOffsets</xpath>
+		<value>
+			<Suppressability>-0.55</Suppressability>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechHelmet"]/equippedStatOffsets</xpath>
+		<value>
+			<Suppressability>-0.35</Suppressability>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Gunlink"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Gunlink"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Gunlink"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Gunlink"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<AimingAccuracy>0.50</AimingAccuracy>
+				<ShootingAccuracyPawn>13</ShootingAccuracyPawn>
+        <AimingDelayFactor>-0.5</AimingDelayFactor>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Gunlink"]/apparel</xpath>
+		<value>
+			<layers Inherit="False">
+				<li>StrappedHead</li>
+			</layers>
+		</value>
+	</Operation>
+
+
+
+<!--melee-->
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.2</cooldownTime>
+				<armorPenetrationBlunt>999</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>0.7</cooldownTime>
+				<armorPenetrationBlunt>999</armorPenetrationBlunt>
+				<armorPenetrationSharp>999</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetrationBlunt>999</armorPenetrationBlunt>
+				<armorPenetrationSharp>999</armorPenetrationSharp>
+			</li>
+		</tools>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]/statBases</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]</xpath>
+		<value>
+			<statBases/>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]/statBases</xpath>
+	<value>
+		<Bulk>3</Bulk>
+		<MeleeCounterParryBonus>2.5</MeleeCounterParryBonus>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]</xpath>
+	<value>
+		<equippedStatOffsets>
+			<MeleeCritChance>5</MeleeCritChance>
+			<MeleeParryChance>0.60</MeleeParryChance>
+			<MeleeDodgeChance>0.45</MeleeDodgeChance>
+		</equippedStatOffsets>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]/weaponTags</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]</xpath>
+		<value>
+			<weaponTags/>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechMonoSword"]/weaponTags</xpath>
+	<value>
+		<li>CE_OneHandedWeapon</li>
+	</value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="ArchotechZeusHammer"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.5</cooldownTime>
+				<chanceFactor>0.10</chanceFactor>
+				<armorPenetrationBlunt>20</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<extraMeleeDamages>
+					<li>
+						<def>EMP</def>
+						<amount>15</amount>
+					</li>
+				</extraMeleeDamages>
+				<cooldownTime>2.2</cooldownTime>
+				<armorPenetrationBlunt>350</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="ArchotechZeusHammer"]/statBases</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechZeusHammer"]</xpath>
+		<value>
+			<statBases/>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechZeusHammer"]/statBases</xpath>
+	<value>
+		<Bulk>8</Bulk>
+		<MeleeCounterParryBonus>0.9</MeleeCounterParryBonus>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechZeusHammer"]</xpath>
+	<value>
+		<equippedStatOffsets>
+			<MeleeCritChance>3.5</MeleeCritChance>
+			<MeleeParryChance>0.55</MeleeParryChance>
+			<MeleeDodgeChance>0.35</MeleeDodgeChance>
+		</equippedStatOffsets>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="ArchotechPlasmaSword"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.6</cooldownTime>
+				<chanceFactor>0.10</chanceFactor>
+				<armorPenetrationBlunt>5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>35</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>20</amount>
+						<chance>0.9</chance>
+					</li>
+				</extraMeleeDamages>
+				<cooldownTime>1.2</cooldownTime>
+				<armorPenetrationBlunt>50</armorPenetrationBlunt>
+				<armorPenetrationSharp>60</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>35</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>20</amount>
+						<chance>0.9</chance>
+					</li>
+				</extraMeleeDamages>
+				<cooldownTime>0.9</cooldownTime>
+				<armorPenetrationBlunt>50</armorPenetrationBlunt>
+				<armorPenetrationSharp>60</armorPenetrationSharp>
+			</li>
+		</tools>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="ArchotechPlasmaSword"]/statBases</xpath>
+	<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ArchotechPlasmaSword"]</xpath>
+		<value>
+			<statBases/>
+		</value>
+	</nomatch>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechPlasmaSword"]/statBases</xpath>
+	<value>
+		<Bulk>6</Bulk>
+		<MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="ArchotechPlasmaSword"]</xpath>
+	<value>
+		<equippedStatOffsets>
+			<MeleeCritChance>1.5</MeleeCritChance>
+			<MeleeParryChance>0.60</MeleeParryChance>
+			<MeleeDodgeChance>0.45</MeleeDodgeChance>
+		</equippedStatOffsets>
+	</value>
+</Operation>
+</Patch>
