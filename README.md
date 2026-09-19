@@ -3,6 +3,8 @@ Adds a majority of new archotech ship hardware for sos2 and new faction of enemy
 
 This mod requires Rimworld 1.6\
 Rimworld Royalty DLC\
+Rimworld Ideology DLC\
+Rimworld Biotech DLC\
 More Shield Belts: https://steamcommunity.com/workshop/filedetails/?id=3265661340  
 Save Our Ship 2: https://steamcommunity.com/workshop/filedetails/?id=1909914131  
 Harmony: https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077  
