@@ -13,3 +13,5 @@ How to install:\
 -Unpack the ZIP into Romworld/Mods\
 -It should show up in the games mod manager\
 -Enable it and all required mods and relaunch the game.\
+
+For more information about the mod itself please visit steam page, there are screenshots and presentation of added items and buildings: https://steamcommunity.com/sharedfiles/filedetails/?id=3646309250
